@@ -1,3 +1,198 @@
-<html>
-    <h1>Hi</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamma Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Gamma Academy Logo">
+            <span>Gamma Academy</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item active" data-target="home">Home</a></li>
+            <li><a href="#" class="nav-item" data-target="ncsmt">2026 NCSMT</a></li>
+            <li><a href="#" class="nav-item" data-target="handouts">Handouts</a></li>
+            <li><a href="#" class="nav-item" data-target="mock-contests">Mock Contests</a></li>
+            <li><a href="#" class="nav-item" data-target="books">Books</a></li>
+            <li><a href="#" class="nav-item" data-target="archive">Archive</a></li>
+            <li><a href="#" class="nav-item" data-target="guides">Guides</a></li>
+            <li><a href="#" class="nav-item" data-target="sponsors">Sponsors</a></li>
+            
+            <li class="dropdown-wrapper">
+                <a href="#" class="nav-item" data-target="about">About ▾</a>
+                <div class="dropdown-content">
+                    <a href="#" class="nav-item" data-target="info">Info</a>
+                    <a href="#" class="nav-item" data-target="team">Team</a>
+                    <a href="#" class="nav-item" data-target="contact">Contact</a>
+                </div>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main>
+        
+        <section id="home" class="page-section active">
+            <div class="hero">
+                <h1 class="hero-title fade-in">Welcome to <span class="text-gradient">Gamma Academy</span></h1>
+                
+                <p class="fade-in delay-1">
+                    Gamma Academy is an organization dedicated to helping students learn in a fun and engaging way. 
+                    We offer handouts, mocks, books, boosters, and official competitions.
+                </p>
+                <p class="fade-in delay-2">Currently, we are focusing on and prioritizing math.</p>
+                
+                <a href="https://discord.com/invite/K5vVhtQQUR" target="_blank" rel="noopener noreferrer" class="btn glow-btn fade-in delay-3">
+                    Join the Gamma Academy Discord Server
+                </a>
+            </div>
+
+            <div class="highlight-box fade-in delay-4">
+                <h2>Upcoming Competition</h2>
+                <p>The 2026 NorCal Summer Math Tournament is coming! Check out the 2026 NCSMT Page to see all the latest information and registration page.</p>
+            </div>
+        </section>
+
+        <section id="ncsmt" class="page-section">
+            <h1>2026 NorCal Summer Math Tournament</h1>
+            <div class="content-card">
+                <p>The 2026 NorCal Summer Math Tournament (2026 NCSMT) is now here! Check out all of the info on the document below. Registration, time, all information necessary about the tournament is all on the document.</p>
+                
+                <div class="button-group">
+                    <a href="https://docs.google.com/document/d/1DbZPa1zgYxP0ZXdR8y9apPlEg9hU2zUWTSgGcQkSTzE/edit?tab=t.0" target="_blank" rel="noopener noreferrer" class="btn glow-btn">
+                        Information Document
+                    </a>
+                    <a href="https://forms.gle/sXjALRtFBP2T3wwc8" target="_blank" rel="noopener noreferrer" class="btn glow-btn secondary">
+                        Registration Form
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="mock-contests" class="page-section">
+            <h1>Mock Contests</h1>
+            <p class="subtitle">2027 Mock AMC 8s are coming out in December 2026!</p>
+            
+            <div class="content-card">
+                <h3>MOEMS Division E Mocks</h3>
+                <div class="link-list condensed">
+                    <a href="https://drive.google.com/file/d/1dX8knSNs84kMfl6l6U5TbtaTeEW-4cqa/view" target="_blank" rel="noopener noreferrer" class="resource-link small">
+                        2025-26 Mock I
+                    </a>
+                    <a href="https://drive.google.com/file/d/1GiVc-IlZd5WnWQdw9AdUbKHW9jL3uL9A/view" target="_blank" rel="noopener noreferrer" class="resource-link small">
+                        2025-26 Mock I Solutions
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="archive" class="page-section">
+            <div id="archive-menu">
+                <h1>Archive</h1>
+                <div class="archive-list">
+                    <button id="view-smc-2025" class="btn glow-btn hollow">2025 SMC Results</button>
+                </div>
+            </div>
+
+            <div id="archive-detail-view" class="hidden-view">
+                <div class="back-nav">
+                    <button id="back-to-archive" class="btn-text">← Back to Archive</button>
+                </div>
+                <h1>2025 SMC</h1>
+                <div class="results-container fade-in">
+                    <h2>2025 Summer Math Competition Results</h2>
+                    <div class="results-grid">
+                        <div class="result-category">
+                            <h3>Elementary Division</h3>
+                            <ul>
+                                <li><strong>1st Place ($50):</strong> Nirvi Gandi</li>
+                                <li><strong>2nd Place ($40):</strong> Aryan Devarapalli</li>
+                            </ul>
+                        </div>
+                        <div class="result-category">
+                            <h3>Middle School Division</h3>
+                            <ul>
+                                <li><strong>1st Place ($50):</strong> Zi-Jie (Thomas) Ni</li>
+                                <li><strong>2nd Place ($40):</strong> Ruthvika Gandi</li>
+                                <li><strong>3rd Place ($30):</strong> Sharvina Puvvala</li>
+                            </ul>
+                        </div>
+                        <div class="result-category">
+                            <h3>High School Division</h3>
+                            <ul>
+                                <li><strong>1st Place ($50):</strong> Eric Shu</li>
+                                <li><strong>2nd Place ($40):</strong> Steven (Shengbo) Lin</li>
+                                <li><strong>3rd Place ($30):</strong> Jaxon Choi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="special-mention">Highest scorer in the contest overall was <strong>Eric Shu</strong>!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="info" class="page-section">
+            <h1>Information</h1>
+            <div class="content-card">
+                <p>Welcome to the Gamma Academy Information page. Here you will find general details about our operations and mission.</p>
+            </div>
+        </section>
+
+        <section id="handouts" class="page-section">
+            <h1>Handouts</h1>
+            <p>Resources coming soon.</p>
+        </section>
+
+        <section id="books" class="page-section">
+            <h1>Books</h1>
+            <p>Recommended reading list coming soon.</p>
+        </section>
+
+        <section id="guides" class="page-section">
+            <h1>Guides</h1>
+            <div class="link-list">
+                <a href="#" class="resource-link">Guiding Handouts</a>
+                <a href="#" class="resource-link">Brief Explanation</a>
+            </div>
+        </section>
+
+        <section id="sponsors" class="page-section">
+            <h1>Sponsors and Partners</h1>
+            <p>We are grateful for our supporters.</p>
+        </section>
+
+        <section id="about" class="page-section">
+            <h1>About Gamma Academy</h1>
+            <p>Select a sub-page from the menu above.</p>
+        </section>
+        
+        <section id="team" class="page-section">
+            <h1>Our Team</h1>
+            <p>Meet the people behind Gamma Academy.</p>
+        </section>
+
+        <section id="contact" class="page-section">
+            <h1>Contact Us</h1>
+            <p>Get in touch via our Discord or email.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamma Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
