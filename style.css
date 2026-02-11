@@ -186,7 +186,7 @@ p {
     border: 1px solid var(--primary-orange);
 }
 
-/* --- Partners & Sponsors Tier Styling --- */
+/* --- Partners & Sponsors Styling --- */
 .tier-group {
     margin-bottom: 50px;
     text-align: center;
@@ -227,13 +227,25 @@ p {
 }
 
 /* Image container */
+/* UPDATED COLOR TO EXACT RGB REQUESTED */
 .partner-img-container {
-    background-color: #0d0d15; /* Matches the dark background of the logo */
+    background-color: rgb(4, 8, 26); /* Matches the dark AlphaVortex background precisely */
     height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.clickable-partner {
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.clickable-partner:hover {
+    filter: brightness(1.2); 
 }
 
 .partner-img-container img {
