@@ -32,19 +32,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 5%; /* Slight adjustment */
+    padding: 0.8rem 5%;
     box-shadow: 0 1px 5px rgba(0,0,0,0.03);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* LOGO STYLING UPDATED */
 .logo {
-    display: flex;       /* Aligns img and text row */
-    align-items: center; /* Vertically centers them */
-    gap: 12px;           /* Space between image and text */
-    
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--primary-orange);
@@ -52,10 +50,9 @@ nav {
     letter-spacing: -0.5px;
 }
 
-/* Ensures the logo image isn't too big */
 .logo img {
-    height: 40px;  /* Fits nicely in navbar */
-    width: auto;   /* Maintains aspect ratio */
+    height: 40px;
+    width: auto;
 }
 
 .nav-links {
@@ -64,7 +61,6 @@ nav {
     gap: 25px;
 }
 
-/* Dropdown fix */
 .nav-links li, .dropdown-wrapper {
     position: relative;
 }
@@ -82,7 +78,7 @@ nav {
     color: var(--primary-orange);
 }
 
-/* Dropdown Content */
+/* Dropdown */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -157,7 +153,7 @@ p {
     font-weight: 300;
 }
 
-/* --- Buttons & Glow Effect --- */
+/* --- Buttons --- */
 .btn {
     display: inline-block;
     padding: 10px 22px;
@@ -190,9 +186,87 @@ p {
     border: 1px solid var(--primary-orange);
 }
 
-/* --- Specific Sections --- */
+/* --- Partners & Sponsors Tier Styling --- */
+.tier-group {
+    margin-bottom: 50px;
+    text-align: center;
+}
 
-/* Home */
+.tier-title {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--light-orange);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.tier-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* The Card */
+.partner-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    width: 280px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Image container */
+.partner-img-container {
+    background-color: #0d0d15; /* Matches the dark background of the logo */
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.partner-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Card Text */
+.partner-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.partner-info h3 {
+    font-size: 1.2rem;
+    color: var(--primary-orange);
+    margin-bottom: 8px;
+}
+
+.partner-info p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+.empty-tier-text {
+    font-style: italic;
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+/* --- Specific Section Styling --- */
 .hero {
     text-align: center;
     padding: 50px 0;
@@ -229,7 +303,6 @@ p {
     margin-top: 20px;
 }
 
-/* Links List */
 .link-list {
     display: flex;
     flex-direction: column;
